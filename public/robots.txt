@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://liontracksafari.com/sitemap.xml
+
+# Lion Track Safari - Tanzania Safari Packages
+# Contact: info@liontracksafari.com

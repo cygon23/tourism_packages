@@ -1,0 +1,22 @@
+{
+  "name": "Lion Track Safari",
+  "short_name": "Lion Track",
+  "description": "Experience authentic Tanzania safari adventures with expert guides and quality accommodations",
+  "icons": [
+    {
+      "src": "/favicon_io/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon_io/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#735742",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
