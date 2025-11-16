@@ -5,14 +5,165 @@ import tarangireElephants from "@/assets/tarangire-elephants.jpg";
 import wildebeestMigration from "@/assets/wildebeest-migration.jpg";
 import safariGiraffes from "@/assets/safari-giraffes.jpg";
 
+//3days
+import adventure from "@/assets/3day/3d-01.jpg"; 
+import adventure1 from "@/assets/3day/3d-02.jpg";
+import adventure2 from "@/assets/3day/3d-03.jpg";
+
+//3day safari to remember
+import remember1 from "@/assets/3day/3day-safari-rem1.jpg";
+import remember2 from "@/assets/3day/3day-safari-rem2.jpg";
+import remember3 from "@/assets/3day/3day-safari-remeber.jpg";
+import tarangire from "@/assets/3day/safari-to-rem.webp";
+
+//3days hear of africa
+import heart1 from "@/assets/3day/3-day-lion.jpg";
+import heart2 from "@/assets/3day/creter-view.jpg";
+import heart3 from "@/assets/3day/tarangile.jpeg";
+
+//4days luxury serengeti
+import luxury from "@/assets/4day/ballon.jpg";
+import luxury2 from "@/assets/4day/eleite-safari-ex.jpg";
+import luxury3 from "@/assets/4day/migration-day08-1.jpg";
+import luxury4 from "@/assets/4day/Lake-Manyara-Tree-Climbing-Lion-1024x569.jpg";
+
+//4days northen 
+import north from "@/assets/4day/04-north1.jpg";
+import north1 from "@/assets/4day/04-north.jpg";
+import north2 from "@/assets/4day/3day-safari-rem2.jpg";
+
+//days4 animal kingdom
+import animalKingdom from "@/assets/4day/arsuah-parks.jpg";
+import animalKingdom2 from "@/assets/4day/arusha-moving-car.jpg";
+import animalKingdom3 from "@/assets/4day/manayara-lake.jpg";
+import animalKingdom4 from "@/assets/4day/manayara0buffalo.jpg";
+
+//day4 to elephants to craters
+import creter from "@/assets/4day/to-creater01.jpg";
+import creter1 from "@/assets/4day/to-creter-02.jpg";
+import creter2 from "@/assets/4day/to-creter-03.jpg";
+import creter3 from "@/assets/4day/to creter-04.jpg";
+
+//day4 golden plains
+import golden1 from "@/assets/4day/luxury1.webp";
+import golden2 from "@/assets/4day/luxury.webp";
+import golden3 from "@/assets/4day/luxury2.jpg";
+import golden4 from "@/assets/4day/luxury3.jpg";
+
+//days4 inspiring landscapes
+import inspiring1 from "@/assets/4day/ins02.jpg";
+import inspiring2 from "@/assets/4day/insp01.jpg";
+import inspiring3 from "@/assets/4day/insp03.jpg";
+import inspiring4 from "@/assets/4day/insp04.jpg";
+
+//day5 predator 
+import predator1 from "@/assets/5days/pre1.jpg";
+import predator2 from "@/assets/5days/pred.jpg";
+
+//days 5 signature safari
+import signature1 from "@/assets/5days/signature-01.jpg";
+import signature2 from "@/assets/5days/signature02.jpg";
+
+//days5 ndutu
+import ndutu1 from "@/assets/5days/ndutu01.jpg";
+import ndutu2 from "@/assets/5days/ndutu02.jpg";
+import ndutu3 from "@/assets/5days/ndutu03.avif";
+import ndutu4 from "@/assets/5days/ndutu04.jpg";
+import ndutu5 from "@/assets/5days/ndutu05.jpg";
+
+//day5 masterpiece
+import masterpiece1 from "@/assets/5days/nature04.jpg";
+import masterpiece2 from "@/assets/5days/nature01.jpg";
+import masterpiece3 from "@/assets/5days/nature02.jpg";
+import masterpiece4 from "@/assets/5days/nature03.avif";
+
+//days5 waterfall
+import waterfall1 from "@/assets/5days/waterfall.jpg";
+import waterfall2 from "@/assets/5days/waterfall1.jpg";
+import waterfall3 from "@/assets/5days/waterfall2.jpg";
+import waterfall4 from "@/assets/5days/waterfall03.jpg";
+
+//day5 fly
+import fly1 from "@/assets/5days/fly1.webp";
+import fly2 from "@/assets/5days/fly2.webp";
+
+//day6 kilimanjaro
+import kilimanjaro1 from "@/assets/6day/kilima-05.jpg";
+import kilimanjaro2 from "@/assets/6day/kilima-04.jpg";
+import kilimanjaro3 from "@/assets/6day/kilima02.jpg";
+import kilimanjaro4 from "@/assets/6day/kilima01.jpg";
+import kilimanjaro5 from "@/assets/6day/kilima.jpg";
+
+
+//day6 magic nature
+import magic1 from "@/assets/6day/magic00.jpg";
+import magic2 from "@/assets/6day/magic01.jpg";
+import magic3 from "@/assets/6day/magic1.jpg";
+import magic4 from "@/assets/6day/magic2.jpg";
+
+//day6 mateuni
+import mateuni1 from "@/assets/6day/materuni-waterfalls-beautiful.jpg";
+import mateuni2 from "@/assets/6day/arusha.jpg";
+import mateuni3 from "@/assets/6day/arusha1.jpg";
+
+//day6 migration 
+import migration1 from "@/assets/6day/migration.jpg";
+import migration2 from "@/assets/6day/migration2.jpg";
+import migration3 from "@/assets/6day/migration3.jpg";
+import migration4 from "@/assets/6day/migration5.jpg";
+
+//day7 affordable
+import affordable1 from "@/assets/7day/affod.jpg";
+import affordable2 from "@/assets/7day/afford02.jpg";
+import affordable3 from "@/assets/7day/afford3.jpeg";
+
+//day7 north 
+import north7 from "@/assets/7day/north.jpg";
+
+//day7 south
+import south1 from "@/assets/7day/south.jpg";
+import south2 from "@/assets/7day/south1.jpg";
+import south3 from "@/assets/7day/south2.jpg";
+import south4 from "@/assets/7day/south-boab.jpg";
+
+//day7 crossing
+import crossing1 from "@/assets/7day/crossing.jpg";
+import crossing2 from "@/assets/7day/crossing00.jpg";
+
+//day08 dust 
+import dust1 from "@/assets/8day/dust.jpg";
+import dust2 from "@/assets/8day/dust1.jpg";
+import dust3 from "@/assets/8day/dust03.jpg";
+
+//day8 bush
+import bush1 from "@/assets/8day/bush01.jpg";
+import bush2 from "@/assets/8day/bush02.jpg";
+import bush3 from "@/assets/8day/bush03.jpg";
+
+//day9 migration 
+import migration09_1 from "@/assets/9day/migration.jpeg";
+
+//day9 landofGiants
+import giant1 from "@/assets/9day/z1.jpg";
+import giant2 from "@/assets/9day/z2.jpg";
+import giant3 from "@/assets/9day/z3.jpg";
+
+//day10 big5
+import big5_1 from "@/assets/10day/b5-3.jpg";
+import big5_2 from "@/assets/10day/b5-1.jpg";
+import big5_3 from "@/assets/10day/b5-2.jpg";
+import big5_4 from "@/assets/10day/b5-4.jpg";
+import big5_5 from "@/assets/10day/b5.jpg";
+
+
 export const safariPackages: SafariPackage[] = [
   // ========== 3-DAY SAFARIS ==========
   {
     id: "3-day-fly-in-tanzania",
     title: "3-DAY FLY IN TANZANIA SAFARI ADVENTURE",
     duration: 3,
-    image: safariLions,
-    images: [safariLions, ngorongoroCrater, tarangireElephants],
+    image: adventure2,
+    images: [adventure, adventure1, adventure2],
     price: "From $1,850 per person",
     destinations: ["Central Serengeti National Park", "Ngorongoro Crater"],
     description: "Experience Tanzania's premier wildlife destinations in this compact fly-in safari. Perfect for travelers with limited time who want maximum wildlife encounters.",
@@ -94,8 +245,8 @@ export const safariPackages: SafariPackage[] = [
     id: "3-day-tanzania-journey",
     title: "3-DAY TANZANIA SAFARI A JOURNEY TO REMEMBER",
     duration: 3,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariGiraffes, ngorongoroCrater],
+    image: remember1,
+    images: [tarangire, remember2, remember3],
     price: "From $1,650 per person",
     destinations: ["Tarangire National Park", "Lake Manyara", "Ngorongoro Crater"],
     description: "A perfect introduction to Tanzania's wildlife, visiting Tarangire's elephant herds, Lake Manyara's diverse ecosystems, and the magnificent Ngorongoro Crater.",
@@ -177,8 +328,8 @@ export const safariPackages: SafariPackage[] = [
     id: "3-day-heart-of-africa",
     title: "3-DAY TANZANIA SAFARI INTO THE HEART OF AFRICA",
     duration: 3,
-    image: safariLions,
-    images: [safariLions, ngorongoroCrater, safariGiraffes],
+    image: heart1,
+    images: [heart2, heart3, tarangire],
     price: "From $2,100 per person",
     destinations: ["Serengeti National Park", "Ngorongoro Crater", "Lake Manyara"],
     description: "Dive into the heart of Africa with this immersive 3-day safari covering the Serengeti's endless plains and the spectacular Ngorongoro Crater.",
@@ -262,8 +413,8 @@ export const safariPackages: SafariPackage[] = [
     id: "4-day-luxury-serengeti-fly-in",
     title: "4-DAY LUXURY SERENGETI SAFARI FLY-IN EXPERIENCE",
     duration: 4,
-    image: safariLions,
-    images: [safariLions, ngorongoroCrater, wildebeestMigration, safariGiraffes],
+    image: luxury,
+    images: [luxury2, luxury3, luxury4, luxury],
     price: "From $3,200 per person",
     destinations: ["Serengeti National Park", "Ngorongoro Crater", "Lake Manyara National Park"],
     description: "Fly into the Serengeti for a luxurious safari experience. Maximize your time with wildlife while enjoying premium accommodations and seamless transfers.",
@@ -359,8 +510,8 @@ export const safariPackages: SafariPackage[] = [
     id: "4-day-northern-tanzania",
     title: "4-DAY NORTHERN TANZANIA SAFARI",
     duration: 4,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariLions, ngorongoroCrater, wildebeestMigration],
+    image: north,
+    images: [north1, north2, north],
     price: "From $2,400 per person",
     destinations: ["Tarangire National Park", "Serengeti National Park", "Ngorongoro Crater"],
     description: "Experience the best of Northern Tanzania's wildlife circuit. From Tarangire's elephants to the Serengeti's vast plains and Ngorongoro's crater floor.",
@@ -456,8 +607,8 @@ export const safariPackages: SafariPackage[] = [
     id: "4-day-animal-kingdom",
     title: "4-DAY TANZANIA SAFARI ANIMAL KINGDOM EXPERIENCE",
     duration: 4,
-    image: ngorongoroCrater,
-    images: [ngorongoroCrater, tarangireElephants, safariGiraffes, safariLions],
+    image: animalKingdom,
+    images: [animalKingdom2, animalKingdom3, animalKingdom4, animalKingdom],
     price: "From $2,200 per person",
     destinations: ["Arusha National Park", "Tarangire National Park", "Ngorongoro Crater", "Lake Manyara"],
     description: "A comprehensive 4-day safari visiting four distinct parks, each offering unique wildlife experiences and spectacular landscapes.",
@@ -553,8 +704,8 @@ export const safariPackages: SafariPackage[] = [
     id: "4-day-elephants-to-craters",
     title: "4-DAY TANZANIA SAFARI – FROM ELEPHANTS TO CRATERS",
     duration: 4,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariLions, ngorongoroCrater, wildebeestMigration],
+    image: creter1,
+    images: [creter, creter2, creter3, creter1],
     price: "From $2,300 per person",
     destinations: ["Tarangire National Park", "Serengeti National Park", "Ngorongoro Crater"],
     description: "Experience the wildlife wonders of Tanzania from Tarangire's elephant herds through the Serengeti's endless plains to the magnificent Ngorongoro Crater.",
@@ -650,8 +801,8 @@ export const safariPackages: SafariPackage[] = [
     id: "4-day-golden-plains",
     title: "4-DAY TANZANIA SAFARI – GOLDEN PLAINS & LUXURY",
     duration: 4,
-    image: safariLions,
-    images: [safariLions, tarangireElephants, ngorongoroCrater, wildebeestMigration],
+    image: golden1,
+    images: [golden2, golden3, golden4, golden1],
     price: "From $4,800 per person",
     destinations: ["Tarangire National Park", "Serengeti National Park", "Ngorongoro Crater"],
     description: "Experience luxury safari at its finest with stays at premium lodges including the renowned Four Seasons Safari Lodge Serengeti.",
@@ -747,8 +898,8 @@ export const safariPackages: SafariPackage[] = [
     id: "4-day-inspiring-landscapes",
     title: "4-DAY TANZANIA WILDLIFE SAFARI – INSPIRING LANDSCAPES",
     duration: 4,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, tarangireElephants, safariLions, safariGiraffes],
+    image: inspiring1,
+    images: [inspiring2, inspiring3, inspiring4, inspiring1],
     price: "From $2,600 per person",
     destinations: ["Tarangire National Park", "Serengeti National Park", "Lake Manyara National Park", "Maasai Village"],
     description: "Combine wildlife safaris with cultural experiences in this inspiring journey through Tanzania's northern circuit with a Maasai village visit.",
@@ -846,8 +997,8 @@ export const safariPackages: SafariPackage[] = [
     id: "5-day-predator-tracking",
     title: "5-DAY SAFARI TANZANIA – PREDATOR TRACKING ADVENTURE",
     duration: 5,
-    image: safariLions,
-    images: [safariLions, tarangireElephants, safariGiraffes, ngorongoroCrater, wildebeestMigration],
+    image: predator1,
+    images: [predator2, predator1, animalKingdom3],
     price: "From $3,400 per person",
     destinations: ["Tarangire", "Lake Manyara", "Ngorongoro Crater", "Serengeti"],
     description: "A predator-focused safari exploring Tanzania's prime wildlife areas. Track lions, leopards, and cheetahs across diverse ecosystems.",
@@ -957,8 +1108,8 @@ export const safariPackages: SafariPackage[] = [
     id: "5-day-signature-safari",
     title: "5-DAY SIGNATURE SAFARI TANZANIA",
     duration: 5,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, tarangireElephants, safariLions, ngorongoroCrater, safariGiraffes],
+    image: signature1,
+    images: [signature2, signature1,],
     price: "From $3,100 per person",
     destinations: ["Tarangire", "Ngorongoro Crater", "Serengeti", "Lake Manyara"],
     description: "Our signature safari experience covering all major northern circuit parks with comfortable accommodations and expert guiding.",
@@ -1068,8 +1219,8 @@ export const safariPackages: SafariPackage[] = [
     id: "5-day-migration-ndutu",
     title: "5-DAY TANZANIA MIGRATION SAFARI – NDUTU WONDERS",
     duration: 5,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, ngorongoroCrater, tarangireElephants, safariLions],
+    image: ndutu4,
+    images: [ndutu1, ndutu2, ndutu3, ndutu5],
     price: "From $3,600 per person",
     destinations: ["Ndutu", "Ngorongoro Crater", "Tarangire"],
     description: "Experience the wildebeest calving season in Ndutu (December-March). Witness thousands of newborns and intense predator action.",
@@ -1179,8 +1330,8 @@ export const safariPackages: SafariPackage[] = [
     id: "5-day-natures-masterpiece",
     title: "5-DAY TANZANIA SAFARI – NATURE'S MASTERPIECE",
     duration: 5,
-    image: ngorongoroCrater,
-    images: [ngorongoroCrater, tarangireElephants, safariLions, wildebeestMigration, safariGiraffes],
+    image: masterpiece1,
+    images: [masterpiece2, masterpiece3, masterpiece4, masterpiece1],
     price: "From $2,400 per person",
     destinations: ["Tarangire", "Mto wa Mbu", "Serengeti", "Ngorongoro", "Lake Manyara"],
     description: "An affordable yet comprehensive safari using public campsites. Experience Tanzania's natural masterpieces on a budget-friendly adventure.",
@@ -1290,8 +1441,8 @@ export const safariPackages: SafariPackage[] = [
     id: "5-day-wild-encounters",
     title: "5-DAY TANZANIA SAFARI – WILD ENCOUNTERS & WATERFALLS",
     duration: 5,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariLions, ngorongoroCrater, wildebeestMigration, safariGiraffes],
+    image: waterfall4,
+    images: [waterfall3, waterfall2, waterfall1, waterfall4],
     price: "From $2,700 per person",
     destinations: ["Tarangire", "Serengeti", "Ngorongoro", "Mount Kilimanjaro"],
     description: "Combine wildlife safaris with a visit to Mount Kilimanjaro area. Experience diverse landscapes from savanna to mountain forests.",
@@ -1401,8 +1552,8 @@ export const safariPackages: SafariPackage[] = [
     id: "5-day-wildlife-flyout",
     title: "5-DAY WILDLIFE SAFARI TANZANIA FLY OUT",
     duration: 5,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, tarangireElephants, safariGiraffes, ngorongoroCrater, safariLions],
+    image: fly2,
+    images: [fly1, fly2, waterfall4],
     price: "From $3,900 per person",
     destinations: ["Tarangire", "Lake Manyara", "Ngorongoro", "Serengeti"],
     description: "Comprehensive northern circuit safari with convenient fly-out from Serengeti. Maximize time with wildlife, minimize driving.",
@@ -1514,8 +1665,8 @@ export const safariPackages: SafariPackage[] = [
     id: "6-day-kilimanjaro-to-serengeti",
     title: "6-DAY SAFARI TANZANIA KILIMANJARO TO SERENGETI PLAINS",
     duration: 6,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, safariGiraffes, safariLions, ngorongoroCrater, tarangireElephants],
+    image:  kilimanjaro5 ,
+    images: [kilimanjaro1, kilimanjaro2,kilimanjaro3 , kilimanjaro4],
     price: "From $4,200 per person",
     destinations: ["West Kilimanjaro", "Lake Manyara", "Serengeti", "Ngorongoro"],
     description: "Unique safari combining Kilimanjaro region cultural experiences with classic wildlife viewing in Tanzania's premier parks.",
@@ -1639,8 +1790,8 @@ export const safariPackages: SafariPackage[] = [
     id: "6-day-majestic-moments",
     title: "6-DAY TANZANIA SAFARI – MAJESTIC MOMENTS",
     duration: 6,
-    image: safariLions,
-    images: [safariLions, tarangireElephants, ngorongoroCrater, wildebeestMigration, safariGiraffes],
+    image: magic1,
+    images: [magic2, magic3, magic4, magic1],
     price: "From $4,600 per person",
     destinations: ["Tarangire", "Lake Manyara", "Serengeti", "Ngorongoro"],
     description: "Experience majestic moments across Tanzania's premier destinations with luxury accommodations throughout your journey.",
@@ -1764,8 +1915,8 @@ export const safariPackages: SafariPackage[] = [
     id: "6-day-materuni-falls",
     title: "6-DAY TANZANIA SAFARI – MATERUNI FALLS VISIT",
     duration: 6,
-    image: safariGiraffes,
-    images: [safariGiraffes, tarangireElephants, safariLions, ngorongoroCrater, wildebeestMigration],
+    image: mateuni1,
+    images: [mateuni2, mateuni3],
     price: "From $3,400 per person",
     destinations: ["Arusha", "Materuni Waterfalls", "Tarangire", "Serengeti", "Ngorongoro"],
     description: "Unique safari combining wildlife viewing with a visit to the stunning Materuni Waterfalls near Kilimanjaro.",
@@ -1889,8 +2040,8 @@ export const safariPackages: SafariPackage[] = [
     id: "6-day-wildebeest-migration",
     title: "6-DAY WILDEBEEST MIGRATION SAFARI TANZANIA",
     duration: 6,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, safariLions, tarangireElephants, ngorongoroCrater, safariGiraffes],
+    image: migration1,
+    images: [migration2, migration3, migration4],
     price: "From $5,200 per person",
     destinations: ["Tarangire", "Central Serengeti", "Northern Serengeti", "Ngorongoro"],
     description: "Witness the Great Migration! Track the herds from Central to Northern Serengeti, experiencing the dramatic Mara River crossings.",
@@ -2016,8 +2167,8 @@ export const safariPackages: SafariPackage[] = [
     id: "7-day-affordable-wildlife",
     title: "7-DAY AFFORDABLE WILDLIFE SAFARI IN TANZANIA",
     duration: 7,
-    image: ngorongoroCrater,
-    images: [ngorongoroCrater, safariLions, tarangireElephants, wildebeestMigration, safariGiraffes],
+    image: affordable3,
+    images: [affordable2,affordable1 ],
     price: "From $3,200 per person",
     destinations: ["Lake Manyara", "Serengeti (Mara River)", "Central Serengeti", "Ngorongoro", "Tarangire"],
     description: "Budget-friendly camping safari covering all major parks. Experience the Mara River crossing and comprehensive northern circuit on a camping adventure.",
@@ -2098,8 +2249,8 @@ export const safariPackages: SafariPackage[] = [
     id: "7-day-discover-northern",
     title: "7-DAY DISCOVER NORTHERN TANZANIA SAFARI ADVENTURE",
     duration: 7,
-    image: safariLions,
-    images: [safariLions, tarangireElephants, safariGiraffes, ngorongoroCrater, wildebeestMigration],
+    image: north7,
+    images: [north7],
     price: "From $4,800 per person",
     destinations: ["Tarangire", "Lake Manyara", "Serengeti", "Ngorongoro"],
     description: "Comprehensive northern circuit safari with quality lodge accommodations and extended time in each park for thorough wildlife exploration.",
@@ -2180,8 +2331,8 @@ export const safariPackages: SafariPackage[] = [
     id: "7-day-southern-wild-paths",
     title: "7-DAY SOUTHERN TANZANIA SAFARI – WILD PATHS",
     duration: 7,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariGiraffes, safariLions, ngorongoroCrater, wildebeestMigration],
+    image: south4,
+    images: [south3, south2, south1],
     price: "From $4,200 per person",
     destinations: ["Tarangire", "Lake Manyara", "Serengeti", "Ngorongoro"],
     description: "Explore Tanzania's wild paths with comfortable lodges and extended game viewing opportunities across all major northern parks.",
@@ -2262,8 +2413,8 @@ export const safariPackages: SafariPackage[] = [
     id: "7-day-migration-mara-river",
     title: "7-DAY TANZANIA SAFARI – MIGRATION CROSSING MARA RIVER",
     duration: 7,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, safariLions, ngorongoroCrater, tarangireElephants, safariGiraffes],
+    image: crossing1,
+    images: [crossing2, crossing1],
     price: "From $5,800 per person",
     destinations: ["Mara River (Kogatende)", "Central Serengeti", "Ngorongoro", "Tarangire"],
     description: "Fly directly to the Mara River region for three days of migration viewing. Experience the dramatic river crossings and predator action.",
@@ -2346,8 +2497,8 @@ export const safariPackages: SafariPackage[] = [
     id: "8-day-tracks-in-dust",
     title: "8-DAY TANZANIA SAFARI – TRACKS IN THE DUST",
     duration: 8,
-    image: safariLions,
-    images: [safariLions, safariGiraffes, ngorongoroCrater, wildebeestMigration, tarangireElephants],
+    image: dust2,
+    images: [dust1, dust3, dust2],
     price: "From $5,200 per person",
     destinations: ["Lake Manyara", "Lake Natron", "Northern Serengeti", "Central Serengeti", "Ngorongoro", "Tarangire"],
     description: "Adventurous safari including the remote Lake Natron region. Experience diverse landscapes from soda lakes to the Serengeti plains.",
@@ -2436,8 +2587,8 @@ export const safariPackages: SafariPackage[] = [
     id: "8-day-ultimate-experience",
     title: "8-DAY TANZANIA SAFARI – THE ULTIMATE EXPERIENCE",
     duration: 8,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, safariLions, tarangireElephants, ngorongoroCrater, safariGiraffes],
+    image: bush1,
+    images: [bush1,bush2, bush3],
     price: "From $5,800 per person",
     destinations: ["Tarangire", "Serengeti", "Ngorongoro", "Lake Manyara"],
     description: "The ultimate Tanzania safari experience with extended time in each park, luxury accommodations, and comprehensive wildlife viewing.",
@@ -2528,8 +2679,8 @@ export const safariPackages: SafariPackage[] = [
     id: "9-day-essence-mara-river",
     title: "9-DAY TANZANIA SAFARI – ESSENCE OF MARA RIVER",
     duration: 9,
-    image: wildebeestMigration,
-    images: [wildebeestMigration, safariLions, tarangireElephants, ngorongoroCrater, safariGiraffes],
+    image: migration09_1,
+    images: [migration1, migration09_1 ],
     price: "From $6,500 per person",
     destinations: ["Arusha NP", "Tarangire", "Lake Manyara", "Lake Natron", "Northern Serengeti", "Central Serengeti", "Ngorongoro"],
     description: "Comprehensive safari including Arusha National Park, Lake Natron, and extended Mara River viewing for migration enthusiasts.",
@@ -2626,8 +2777,8 @@ export const safariPackages: SafariPackage[] = [
     id: "9-day-land-of-giants",
     title: "9-DAY TANZANIA SAFARI – LAND OF GIANTS",
     duration: 9,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariLions, ngorongoroCrater, safariGiraffes, wildebeestMigration],
+    image: giant2,
+    images: [giant3, giant1, giant2],
     price: "From $6,200 per person",
     destinations: ["Tarangire", "Ngorongoro", "Serengeti", "Lake Manyara", "Zanzibar"],
     description: "Complete safari experience combined with Zanzibar beach extension. Wildlife adventures followed by tropical island relaxation.",
@@ -2726,8 +2877,8 @@ export const safariPackages: SafariPackage[] = [
     id: "10-day-kilimanjaro-big-five",
     title: "10-DAY KILIMANJARO & BIG FIVE SAFARI TANZANIA",
     duration: 10,
-    image: tarangireElephants,
-    images: [tarangireElephants, safariLions, ngorongoroCrater, wildebeestMigration, safariGiraffes],
+    image: big5_1,
+    images: [big5_2, big5_3, big5_4, big5_5, big5_1],
     price: "From $3,800 per person",
     destinations: ["Mount Kilimanjaro", "Serengeti National Park", "Ngorongoro Conservation Area"],
     description: "Combine Kilimanjaro trekking with wildlife safari. Summit Africa's highest peak via Machame Route before exploring Tanzania's premier wildlife parks.",
