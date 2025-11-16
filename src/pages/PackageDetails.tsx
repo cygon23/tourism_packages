@@ -38,15 +38,15 @@ const PackageDetails = () => {
         onClose={() => setIsQuoteModalOpen(false)}
       />
 
-      <div className="container mx-auto px-4 py-24">
-        <Button variant="outline" asChild className="mb-6">
+      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+        <Button variant="outline" asChild className="mb-4 sm:mb-6 mt-4 sm:mt-6 md:mt-8">
           <Link to="/">
-            <ArrowLeft className="h-4 w-4" />
-            Back to Packages
+            <ArrowLeft className="h-3 w-3 sm:h-4 sm:w-4" />
+            <span className="text-sm sm:text-base">Back to Packages</span>
           </Link>
         </Button>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Left Column - 70% */}
           <div className="lg:col-span-2 space-y-8">
             {/* Image Carousel */}
@@ -75,8 +75,8 @@ const PackageDetails = () => {
 
             {/* Package Overview */}
             <div className="animate-fade-in">
-              <h1 className="text-4xl font-bold text-safari-green mb-4">{pkg.title}</h1>
-              <p className="text-lg text-muted-foreground mb-6">{pkg.description}</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-safari-green dark:text-safari-green-light mb-3 sm:mb-4">{pkg.title}</h1>
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-4 sm:mb-6">{pkg.description}</p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 <Card className="p-4 text-center">
@@ -120,7 +120,7 @@ const PackageDetails = () => {
 
             {/* Day-by-Day Itinerary */}
             <div className="animate-slide-up">
-              <h2 className="text-3xl font-bold text-safari-green mb-6">Day-by-Day Itinerary</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-safari-green dark:text-safari-green-light mb-4 sm:mb-6">Day-by-Day Itinerary</h2>
               <Accordion type="single" collapsible className="space-y-4">
                 {pkg.itinerary.map((day) => (
                   <AccordionItem key={day.day} value={`day-${day.day}`}>
@@ -150,34 +150,6 @@ const PackageDetails = () => {
                               ))}
                             </ul>
                           </div>
-                        )}
-
-                        {day.accommodation.type !== "N/A" && (
-                          <Card className="p-4 bg-muted">
-                            <div className="flex items-start gap-4">
-                              <img
-                                src={day.accommodation.image}
-                                alt={day.accommodation.name}
-                                className="w-24 h-24 object-cover rounded-lg"
-                              />
-                              <div>
-                                <h4 className="font-bold">{day.accommodation.name}</h4>
-                                <p className="text-sm text-muted-foreground">{day.accommodation.type}</p>
-                                {day.accommodation.rating > 0 && (
-                                  <div className="flex gap-1 mt-1">
-                                    {Array.from({ length: day.accommodation.rating }).map((_, i) => (
-                                      <span key={i} className="text-safari-golden">⭐</span>
-                                    ))}
-                                  </div>
-                                )}
-                                {day.accommodation.amenities.length > 0 && (
-                                  <p className="text-sm text-muted-foreground mt-2">
-                                    {day.accommodation.amenities.join(" • ")}
-                                  </p>
-                                )}
-                              </div>
-                            </div>
-                          </Card>
                         )}
 
                         {day.distance && (

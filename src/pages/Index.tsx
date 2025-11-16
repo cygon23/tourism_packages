@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import PackageCard from "@/components/PackageCard";
 import FloatingChatbot from "@/components/FloatingChatbot";
@@ -6,22 +6,14 @@ import QuoteFormModal from "@/components/QuoteFormModal";
 import ReviewModal from "@/components/ReviewModal";
 import { Button } from "@/components/ui/button";
 import { safariPackages } from "@/data/packages";
-import heroImage from "@/assets/hero-safari.jpg";
-import safariLions from "@/assets/safari-lions.jpg";
-import safariGiraffes from "@/assets/safari-giraffes.jpg";
-import tarangireElephants from "@/assets/tarangire-elephants.jpg";
+import heroHomeImage from "@/assets/hero-home.jpg";
 import logo from "@/assets/logo.png";
-import { MapPin, Award, Users, Shield, Mail, Phone, Facebook, Instagram, Twitter, ChevronLeft, ChevronRight, UserCheck, Star, Target } from "lucide-react";
+import { MapPin, Award, Users, Shield, Mail, Phone, Facebook, Instagram, Twitter, UserCheck, Star, Target } from "lucide-react";
 
 const durations = [3, 4, 5, 6, 7, 8, 9, 10];
 
-// Hero images for carousel
-const heroImages = [heroImage, safariLions, safariGiraffes, tarangireElephants];
-
 const Index = () => {
   const [selectedDuration, setSelectedDuration] = useState<number | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [showAllPackages, setShowAllPackages] = useState(false);
@@ -32,33 +24,8 @@ const Index = () => {
 
   const displayedPackages = showAllPackages ? filteredPackages : filteredPackages.slice(0, 6);
 
-  // Auto-rotate hero images
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-        setIsTransitioning(false);
-      }, 500);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const nextImage = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-      setIsTransitioning(false);
-    }, 300);
-  };
-
-  const prevImage = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentImageIndex((prev) => (prev - 1 + heroImages.length) % heroImages.length);
-      setIsTransitioning(false);
-    }, 300);
+  const handleViewPackages = () => {
+    document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -70,153 +37,36 @@ const Index = () => {
         onClose={() => setIsQuoteModalOpen(false)}
       />
 
-      {/* Creative Hero Section - Non-traditional Layout */}
-      <section className="relative min-h-screen pt-24 md:pt-36 pb-8 md:pb-16 overflow-hidden bg-gradient-to-br from-white via-cream to-white">
-        {/* Safari Pattern Background */}
-        <div className="absolute inset-0 opacity-[0.12]">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="safari-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-                {/* Wavy path */}
-                <path d="M20 50 Q 30 45, 40 50 T 60 50 T 80 50" stroke="#735742" strokeWidth="2" fill="none"/>
-                {/* Dots */}
-                <circle cx="15" cy="30" r="3" fill="#735742"/>
-                <circle cx="90" cy="80" r="3" fill="#735742"/>
-                <circle cx="105" cy="40" r="2" fill="#735742"/>
-                {/* Arrows/directions */}
-                <path d="M70 25 L75 30 L70 35" stroke="#735742" strokeWidth="2" fill="none"/>
-                <path d="M40 90 L45 85 L50 90" stroke="#735742" strokeWidth="2" fill="none"/>
-                {/* Small leaves/nature */}
-                <path d="M100 70 Q 105 65, 110 70" stroke="#735742" strokeWidth="1.5" fill="none"/>
-                <path d="M25 100 Q 30 95, 35 100" stroke="#735742" strokeWidth="1.5" fill="none"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#safari-pattern)"/>
-          </svg>
+      {/* Hero Section */}
+      <section className="relative min-h-screen pt-16 sm:pt-20 md:pt-24 overflow-hidden">
+        {/* Hero Image */}
+        <div className="absolute inset-0">
+          <img
+            src={heroHomeImage}
+            alt="Safari Adventure"
+            className="w-full h-full object-cover object-center"
+          />
         </div>
 
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-150px)] md:min-h-[calc(100vh-200px)]">
-            {/* Left: Text Content */}
-            <div className="space-y-4 md:space-y-8 animate-slide-in-left">
-              <div className="inline-block">
-                <span className="px-3 md:px-4 py-1.5 md:py-2 bg-safari-green text-white text-xs md:text-sm font-semibold rounded-full">
-                  Tanzania Safari Adventures
-                </span>
-              </div>
+        {/* Hero Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 min-h-[calc(100vh-64px)] sm:min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-96px)] flex flex-col items-center justify-center text-center">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 sm:mb-8 animate-fade-in drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] px-4">
+            Experience Tanzania's Wildlife Wonders
+          </h1>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-safari-green leading-tight">
-                Experience
-                <span className="block text-black mt-1 md:mt-2">Wild Africa</span>
-                <span className="block text-safari-green mt-1 md:mt-2">Like Never Before</span>
-              </h1>
-
-              <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-xl">
-                Embark on unforgettable safaris through Tanzania's pristine wilderness.
-                From the Serengeti to Ngorongoro Crater, discover Africa's most magnificent wildlife.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
-                <Button variant="safari" size="xl" asChild className="w-full sm:w-auto">
-                  <a href="#packages" className="shadow-xl text-sm md:text-base">
-                    Explore Safari Packages
-                  </a>
-                </Button>
-                <Button variant="outline" size="xl" asChild className="w-full sm:w-auto">
-                  <a href="tel:+255682801818" className="border-2 border-safari-green text-safari-green hover:bg-safari-green hover:text-white text-sm md:text-base">
-                    <Phone className="w-4 md:w-5 h-4 md:h-5 mr-2" />
-                    Call Now
-                  </a>
-                </Button>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-8 border-t border-gray-200">
-                {[
-                  { number: "15+", label: "Years" },
-                  { number: "5000+", label: "Travelers" },
-                  { number: "100%", label: "Satisfaction" }
-                ].map((stat, i) => (
-                  <div key={i} className="text-center">
-                    <div className="text-xl md:text-3xl font-bold text-safari-green">{stat.number}</div>
-                    <div className="text-xs md:text-sm text-gray-600">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right: Creative Image Grid */}
-            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] animate-scale-in">
-              {/* Main Large Image */}
-              <div className="absolute top-0 right-0 w-[70%] h-[55%] rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 cursor-pointer"
-                   onClick={nextImage}>
-                <img
-                  src={heroImages[currentImageIndex]}
-                  alt="Safari Adventure"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              </div>
-
-              {/* Secondary Small Image - Top Left */}
-              <div className="absolute top-16 left-0 w-[45%] h-[35%] rounded-2xl overflow-hidden shadow-xl transform -rotate-6 hover:rotate-0 transition-transform duration-500 cursor-pointer"
-                   onClick={prevImage}>
-                <img
-                  src={heroImages[(currentImageIndex + 1) % heroImages.length]}
-                  alt="Wildlife"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Third Image - Bottom */}
-              <div className="absolute bottom-0 left-[15%] w-[60%] h-[40%] rounded-2xl overflow-hidden shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500 cursor-pointer"
-                   onClick={() => setCurrentImageIndex((currentImageIndex + 2) % heroImages.length)}>
-                <img
-                  src={heroImages[(currentImageIndex + 2) % heroImages.length]}
-                  alt="Safari Landscape"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-safari-green/10 rounded-full blur-3xl" />
-              <div className="absolute -top-4 -left-4 w-40 h-40 bg-black/5 rounded-full blur-3xl" />
-
-              {/* Small Navigation Dots */}
-              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
-                {heroImages.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentImageIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === currentImageIndex
-                        ? "w-8 bg-safari-green"
-                        : "bg-gray-300 hover:bg-safari-green/50"
-                    }`}
-                    aria-label={`View image ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Floating Badge */}
-        <div className="absolute top-32 right-8 bg-white rounded-2xl shadow-2xl p-6 animate-float hidden lg:block">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-safari-green rounded-full flex items-center justify-center">
-              <Award className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <div className="font-bold text-safari-green">Award Winning</div>
-              <div className="text-sm text-gray-600">Safari Company</div>
-            </div>
-          </div>
+          <Button
+            variant="golden"
+            size="xl"
+            onClick={handleViewPackages}
+            className="mt-2 sm:mt-4 px-6 py-5 sm:px-8 sm:py-6 md:px-10 md:py-7 text-base sm:text-lg md:text-xl font-semibold shadow-2xl hover:scale-105 transition-all duration-300 animate-slide-up"
+          >
+            View Packages
+          </Button>
         </div>
       </section>
 
       {/* Packages Section */}
-      <section id="packages" className="relative container mx-auto px-4 py-24 overflow-hidden">
+      <section id="packages" className="relative container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
         {/* Safari Animals Pattern Background */}
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -250,18 +100,18 @@ const Index = () => {
           </svg>
         </div>
 
-        <div className="relative z-10 text-center mb-16 animate-slide-up">
+        <div className="relative z-10 text-center mb-8 sm:mb-12 md:mb-16 animate-slide-up">
           <div className="inline-block">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="h-1 w-12 bg-safari-golden rounded" />
-              <span className="text-safari-golden font-semibold text-sm uppercase tracking-wider">Our Packages</span>
-              <div className="h-1 w-12 bg-safari-golden rounded" />
+            <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+              <div className="h-0.5 sm:h-1 w-8 sm:w-12 bg-safari-golden rounded" />
+              <span className="text-safari-golden font-semibold text-xs sm:text-sm uppercase tracking-wider">Our Packages</span>
+              <div className="h-0.5 sm:h-1 w-8 sm:w-12 bg-safari-golden rounded" />
             </div>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-safari-green mb-4 md:mb-6 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-safari-green dark:text-safari-green-light mb-3 sm:mb-4 md:mb-6 tracking-tight px-4">
             Safari Packages
           </h2>
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4 sm:px-6">
             Choose from our carefully curated safari experiences, each designed to showcase
             Tanzania's incredible wildlife and landscapes in unforgettable ways
           </p>
@@ -356,25 +206,25 @@ const Index = () => {
       </section>
 
       {/* Trust Section with Circular Stats */}
-      <section className="bg-gradient-to-br from-safari-green via-safari-green-light to-safari-green text-primary-foreground py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-safari-green via-safari-green-light to-safari-green dark:from-safari-green-light dark:via-safari-green dark:to-safari-green-light text-primary-foreground py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-safari-golden rounded-full blur-3xl" />
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">Why Choose Lion Track Safari</h2>
-            <p className="text-base md:text-lg lg:text-xl text-primary-foreground/90 px-4">Trusted by thousands of adventurers worldwide</p>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-4 px-4">Why Choose Lion Track Safari</h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-foreground/90 px-4 sm:px-6">Trusted by thousands of adventurers worldwide</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 max-w-6xl mx-auto px-4">
             {[
               { number: "15+", label: "Years Experience", icon: Award, delay: "0ms" },
-              { number: "5000+", label: "Happy Travelers", icon: Users, delay: "100ms" },
+              { number: "200+", label: "Happy Travelers", icon: Users, delay: "100ms" },
               { number: "100%", label: "Customer Satisfaction", icon: Shield, delay: "200ms" },
-              { number: "50+", label: "Safari Destinations", icon: MapPin, delay: "300ms" }
+              { number: "29+", label: "Safari Destinations", icon: MapPin, delay: "300ms" }
             ].map((stat, index) => {
               const Icon = stat.icon;
               return (
@@ -417,7 +267,7 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="relative py-24 bg-muted/30 overflow-hidden">
+      <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-muted/30 dark:bg-muted/10 overflow-hidden">
         {/* Compass & Travel Pattern Background */}
         <div className="absolute inset-0 opacity-[0.1] pointer-events-none">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -479,12 +329,12 @@ const Index = () => {
           </svg>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-safari-green mb-6">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-safari-green dark:text-safari-green-light mb-4 sm:mb-6 px-4">
               The Lion Track Difference
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-6">
               Experience safari excellence with our commitment to quality and unforgettable adventures
             </p>
           </div>
@@ -531,7 +381,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="relative bg-gradient-to-b from-safari-green to-safari-green-light text-primary-foreground overflow-hidden">
+      <footer id="contact" className="relative bg-gradient-to-b from-safari-green to-safari-green-light dark:from-safari-green-light dark:to-safari-green text-primary-foreground overflow-hidden">
         {/* Africa Map & Wildlife Pattern Background */}
         <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -589,8 +439,8 @@ const Index = () => {
           </svg>
         </div>
 
-        <div className="container mx-auto px-4 py-12 md:py-16 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
+        <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-12 lg:py-16 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
             {/* Company Info */}
             <div className="md:col-span-2 animate-fade-in">
               <div className="mb-4">
@@ -610,28 +460,28 @@ const Index = () => {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-safari-golden flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/30 border-2 border-white/50 hover:bg-safari-golden hover:border-safari-golden flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg group"
                   aria-label="Facebook"
                 >
-                  <Facebook className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform" />
+                  <Facebook className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
                 </a>
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-safari-golden flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/30 border-2 border-white/50 hover:bg-safari-golden hover:border-safari-golden flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg group"
                   aria-label="Instagram"
                 >
-                  <Instagram className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform" />
+                  <Instagram className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
                 </a>
                 <a
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-safari-golden flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/30 border-2 border-white/50 hover:bg-safari-golden hover:border-safari-golden flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg group"
                   aria-label="Twitter"
                 >
-                  <Twitter className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform" />
+                  <Twitter className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>

@@ -85,13 +85,13 @@ All colors MUST be HSL.
 
   .dark {
     --background: 0 0% 10%;
-    --foreground: 0 0% 100%;
+    --foreground: 0 0% 95%;
 
     --card: 0 0% 15%;
-    --card-foreground: 0 0% 100%;
+    --card-foreground: 0 0% 95%;
 
     --popover: 0 0% 15%;
-    --popover-foreground: 0 0% 100%;
+    --popover-foreground: 0 0% 95%;
 
     --primary: 26 27% 45%;
     --primary-foreground: 0 0% 100%;
@@ -105,12 +105,20 @@ All colors MUST be HSL.
     --accent: 26 27% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 25%;
     --input: 0 0% 25%;
     --ring: 26 27% 45%;
+
+    /* Dark mode Safari colors - keeping brand brown/green consistency */
+    --safari-green: 26 27% 50%;
+    --safari-green-light: 26 27% 60%;
+    --golden: 26 35% 55%;
+    --golden-dark: 26 35% 45%;
+    --safari-golden: 26 35% 55%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
